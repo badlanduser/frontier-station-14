@@ -13,6 +13,7 @@
   - ShipyardPaladin
   - ShipyardProwler
   - ShipyardRogue
+  - ShipyardSnakebite
   - ShipyardTemplar
   - ShipyardWasp
 
@@ -65,6 +66,11 @@
   id: ShipyardRogue
   name: guide-entry-shipyard-rogue
   text: "/ServerInfo/_NF/Guidebook/Shipyard/Rogue.xml"
+
+- type: guideEntry
+  id: ShipyardSnakebite
+  name: guide-entry-shipyard-snakebite
+  text: "/ServerInfo/_NF/Guidebook/Shipyard/Snakebite.xml"
 
 - type: guideEntry
   id: ShipyardTemplar

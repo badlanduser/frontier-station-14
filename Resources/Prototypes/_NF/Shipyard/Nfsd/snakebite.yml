@@ -1,0 +1,42 @@
+# Author Info
+# GitHub: badlanduser
+# Discord: ImJustChillingXD
+
+# Maintainer Info
+# GitHub: badlanduser
+# Discord: ImJustChillingXD
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Snakebite
+  parent: BaseVessel
+  name: NSF Snakebite
+  description: A medium size patrol shuttle, built to send a boarding party via EVA.
+  price: 30000 # 27665 x 1.1 = 30431 round down 30000
+  category: Medium
+  group: Security
+  access: Sergeant
+  shuttlePath: /Maps/_NF/Shuttles/Nfsd/snakebite.yml
+  guidebookPage: ShipyardSnakebite
+  class:
+  - Patrol
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Snakebite
+  mapName: 'NSF Snakebite'
+  mapPath: /Maps/_NF/Shuttles/Nfsd/snakebite.yml
+  minPlayers: 0
+  stations:
+    Snakebite:
+      stationProto: StandardFrontierSecurityVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Snakebite {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}
