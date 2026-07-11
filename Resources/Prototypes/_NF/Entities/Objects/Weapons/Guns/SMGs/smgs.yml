@@ -36,6 +36,45 @@
     zeroVisible: true
 
 - type: entity
+  id: NFWeaponSubMachineGunC20rROW
+  parent: [ NFWeaponSubMachineGunC20r ]
+  name: cyborg C-20r
+  description: |-
+    An illegal firearm that is often used by the infamous nuclear operatives.
+  components:
+  - type: Gun
+    minAngle: 2
+    maxAngle: 16
+    angleIncrease: 4
+    angleDecay: 16
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/SMGs/c20r.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-5
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+  - type: ProjectileBatteryAmmoProvider
+    proto: CartridgePistol
+    fireCost: 100
+  - type: Battery
+    maxCharge: 3000
+    startingCharge: 3000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 25
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: true
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-cybersun-industries
+
+- type: entity
   id: NFWeaponSubMachineGunDrozd
   parent: [ BaseC2ContrabandUnredeemable, NFBaseWeaponSubMachineGunChamber35, NFBaseWeaponFrameSubMachineGunNanotrasen ]
   name: Drozd

@@ -1506,7 +1506,7 @@
   - type: ItemBorgModule
     moduleId: C20RROW # Frontier
     hands:
-    - item: WeaponSubMachineGunC20rROW # FRONTIER TODO: Make NF variant of this
+    - item: NFWeaponSubMachineGunC20rROW # Frontier: WeaponSubMachineGunC20rROW<NFWeaponSubMachineGunC20rROW
     - item: PinpointerSyndicateNuclear
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-c20r-module }
